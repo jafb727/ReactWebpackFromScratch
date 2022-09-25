@@ -1,0 +1,24 @@
+/*
+ * Author: Jose A Felix
+ * Editor: Jose A Felix
+ * Name: App.scss
+ * Description: Deafult App stylesheet
+ */
+
+/* --------------------------------------------- */
+
+/** Fonts */
+@font-face {
+   font-family: "Roboto";
+   src: url("./../../assets/fonts/roboto-regular.woff2");
+}
+
+/* --------------------------------------------- */
+
+* {
+   font-family: "Roboto", sans-serif;
+}
+
+.appContainer {
+   height: auto;
+}
