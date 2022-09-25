@@ -1,0 +1,62 @@
+{
+   // Default parser
+   "parser": "@babel/eslint-parser",
+   "extends": [
+      "airbnb",
+      "plugin:import/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:import/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended"
+   ],
+   "env": {
+      // Allows using DOM objects
+      "browser": true,
+      // JS code compilation
+      "es6": true
+   },
+   "parserOptions": {
+      // To not require babel config file
+      "requireConfigFile": false,
+      "babelOptions": {
+         "parserOpts": {
+            // To be able to parse JSX in JS files
+            "plugins": ["jsx"]
+         }
+      }
+   },
+   "rules": {
+      "react/function-component-definition": [
+         2,
+         {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+         }
+      ],
+      // Allow JSX in JS files
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-indent": ["error", 3],
+      // Arrow functions always wrapped in {}
+      "arrow-body-style": ["error", "always"],
+      // To allow import apart from project dependencies
+      "import/no-extraneous-dependencies": [
+         "error",
+         {
+            "devDependencies": true,
+            "optionalDependencies": true,
+            "peerDependencies": true,
+            "bundledDependencies": true
+         }
+      ],
+      "indent": ["error", 3],
+      "quotes": ["error", "double"]
+   },
+   "settings": {
+      "import/resolver": {
+         // Import components without extension
+         "node": {
+            "extensions": [".js", ".jsx"]
+         }
+      }
+   }
+}
