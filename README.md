@@ -8,7 +8,8 @@ Building a React app can be tricky, especially when defining ESLint rules which 
 
 ## Installation
 
-This project is hosted in GitHub. To install it you will need to clone using this URL: https://github.com/jafb727/ReactWebpackFromScratch.git. After that run "npm i" or "yarn" command in a new terminal window.
+This project is hosted in GitHub. To install it you will need to clone using this URL: https://github.com/jafb727/ReactWebpackFromScratch.git. 
+After cloning, run "npm i" or "yarn" command in a new terminal window.
 
 ## Usage
 
